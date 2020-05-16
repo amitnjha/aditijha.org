@@ -21,10 +21,17 @@ const Main = () => (
 
          <a
           className="App-link"
-          href="/flasky"
+          href="/jenkins"
           rel="noopener noreferrer"
         >
           Jenkins
+        </a>
+        <a
+          className="App-link"
+          href="/mantisbt"
+          rel="noopener noreferrer"
+        >
+          Mantisbt
         </a>
       </header>
     </div>
@@ -32,4 +39,3 @@ const Main = () => (
 );
 
 export default Main;
-
