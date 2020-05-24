@@ -1,8 +1,17 @@
 import React from 'react';
 import NavBar from './NavBar';
 import logo from '../logo.png';
+import Gallery from "react-photo-gallery";
+import ArrowDropDownCircleTwoToneIcon from '@material-ui/icons/ArrowDropDownCircleTwoTone';
 
-const Main = () => (
+class Main extends React.Component{
+
+    componentDidMount(props) {
+	this.props.getPhotoList();
+    }
+    
+    render(){
+	return(
    <div>
    <NavBar/>
    <div className="App">
@@ -33,9 +42,14 @@ const Main = () => (
         >
           Mantisbt
         </a>
+	<ArrowDropDownCircleTwoToneIcon />
       </header>
+      
+      { this.props.photos &&
+	  	<Gallery photos={this.props.photos} />
+	  }
     </div>
    </div>
-);
+	)}}
 
 export default Main;

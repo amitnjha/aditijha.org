@@ -2,26 +2,26 @@ import React from 'react';
 
 import './App.css';
 // import NavBar from './components/NavBar';
-import Main from './components/Main';
+import MainContainer from './components/MainContainer';
 import About from './components/About';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
-} from "react-router-dom";
+  Route,
+} from 'react-router-dom';
 
 function App() {
   return (
-      <Router>
+    <Router>
 	  <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Main />
-          </Route>
-        </Switch>
-      </Router>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <MainContainer />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
