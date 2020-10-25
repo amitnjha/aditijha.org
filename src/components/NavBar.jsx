@@ -12,9 +12,17 @@ const NavBar = () => (
       <NavDropdown title="Apps" id="basic-nav-dropdown">
         <NavDropdown.Item href="/flasky">Flasky</NavDropdown.Item>
         <NavDropdown.Item href="/jenkins">Jenkins</NavDropdown.Item>
-	<NavDropdown.Item href="/mantisbt">Mantis BT</NavDropdown.Item>
+	      <NavDropdown.Item href="/mantisbt">Mantis BT</NavDropdown.Item>
+        <NavDropdown.Item href="/superlists">Superlists</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/about">About</NavDropdown.Item>
+      </NavDropdown>
+      <NavDropdown title="ML Projects" id="basic-nav-dropdown">
+        <NavDropdown.Item href="/digit-guess">Digits</NavDropdown.Item>
+        <NavDropdown.Item href="/breakout">Breakout</NavDropdown.Item>
+	      <NavDropdown.Item href="/autocorrect">Auto Correct</NavDropdown.Item>
+        <NavDropdown.Item href="/autocomplete">Auto Complete</NavDropdown.Item>
+        <NavDropdown.Item href="/activate">Activate</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="/about">About</Nav.Link>
     </Nav>
